@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <section class="h-screen text-white bg-primary vh-90">
+    <section class="h-screen text-white bg-primary vh-90" id="home">
         <div class="container flex-col py-5 align-items-center h-100 d-flex col-xxl-8">
             <div class="py-5 row flex-lg-row-reverse align-items-center g-5">
                 <div class="col-10 col-sm-8 col-lg-6">
@@ -110,7 +110,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="service">
         <div class="container py-5 px-4" id="featured-3">
             <div class="text-center w-100">
                 <span class="py-2 px-5 mx-auto border text-primary title border-primary fw-semibold btn-lg rounded-pill">
@@ -213,7 +213,7 @@
 
         </div>
     </section>
-    <section class="section pricing bg-light">
+    <section class="section pricing bg-light" id="pricing">
         <div class="container py-3">
 
             <div class="text-center w-100">
