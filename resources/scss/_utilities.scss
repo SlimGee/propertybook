@@ -1,0 +1,32 @@
+$utilities: map-merge(
+    $utilities,
+    (
+        "viewport-height": (
+            property: height,
+            class: vh,
+            values: (
+                25: 25vh,
+                30: 30vh,
+                40: 40vh,
+                50: 50vh,
+                60: 60vh,
+                75: 75vh,
+                80: 80vh,
+                90: 90vh,
+                100: 100vh,
+            ),
+        ),
+        "letter-spacing": (
+            property: letter-spacing,
+            class: tracking,
+            values: (
+                tighter: -0.05em,
+                tight: -0.025em,
+                normal: 0em,
+                wide: 0.025em,
+                wider: 0.05em,
+                widest: 0.1em,
+            ),
+        ),
+    )
+);

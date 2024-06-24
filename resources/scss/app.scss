@@ -1,1 +1,45 @@
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "utilities";
+@import "variables";
+@import "bootstrap/scss/utilities/api";
+@import "bootstrap/scss/bootstrap";
+
+.section {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    span {
+        width: 50px;
+        height: 2px;
+        background-color: $primary;
+    }
+}
+
+.about-tabs {
+    .nav-link.bg-white.active {
+        background-color: $primary !important;
+        color: $white !important;
+    }
+}
+
+.about {
+    .icon {
+        width: 200px;
+        color: $gray-400;
+        position: absolute;
+        transform: translateY(-50%) translateX(-40%);
+        z-index: 1 !important;
+    }
+    img {
+        z-index: 999 !important;
+    }
+}
