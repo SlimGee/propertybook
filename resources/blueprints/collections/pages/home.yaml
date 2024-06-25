@@ -1,0 +1,208 @@
+title: Landing
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: subtitle
+            field:
+              type: markdown
+              display: Subtitle
+          -
+            handle: panels
+            field:
+              type: replicator
+              display: Panels
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: panel_image
+                          field:
+                            max_files: 1
+                            min_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Panel Image'
+                        -
+                          handle: teaser
+                          field:
+                            type: text
+                            display: Teaser
+                        -
+                          handle: header
+                          field:
+                            type: text
+                            display: Header
+                        -
+                          handle: has_tabs
+                          field:
+                            type: toggle
+                            display: 'Has Tabs'
+                        -
+                          handle: tabs
+                          field:
+                            type: replicator
+                            display: Tabs
+                            if:
+                              has_tabs: 'equals true'
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: title
+                                        field:
+                                          type: text
+                                          display: Title
+                                      -
+                                        handle: content
+                                        field:
+                                          type: markdown
+                                          display: Content
+                        -
+                          handle: content
+                          field:
+                            type: markdown
+                            display: Content
+                            unless:
+                              has_tabs: 'equals true'
+          -
+            handle: service_items
+            field:
+              type: replicator
+              display: 'Service Items'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: icon
+                          field:
+                            type: text
+                            display: Icon
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                        -
+                          handle: content
+                          field:
+                            type: markdown
+                            display: Content
+          -
+            handle: pricing_items
+            field:
+              type: replicator
+              display: 'Pricing Items'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: name
+                          field:
+                            type: text
+                            display: Name
+                        -
+                          handle: subtitle
+                          field:
+                            type: text
+                            display: Subtitle
+                        -
+                          handle: price
+                          field:
+                            type: text
+                            display: Price
+                        -
+                          handle: recommended
+                          field:
+                            type: toggle
+                            display: Recommended
+                        -
+                          handle: cta_text
+                          field:
+                            default: 'Start free trial'
+                            type: text
+                            display: 'CTA Text'
+                        -
+                          handle: features
+                          field:
+                            type: replicator
+                            display: Features
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: entry
+                                        field:
+                                          type: text
+                                          display: Entry
+          -
+            handle: cta_title
+            field:
+              type: text
+              display: 'CTA Title'
+          -
+            handle: cta_cta_text
+            field:
+              type: text
+              display: 'CTA CTA text'
+              instructions: 'I know, recursion, right?'
+          -
+            handle: cta_cta_link
+            field:
+              type: link
+              display: 'CTA CTA Link'
+          -
+            handle: cta_subtitle
+            field:
+              type: markdown
+              display: 'CTA Subtitle'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

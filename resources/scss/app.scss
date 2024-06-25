@@ -9,6 +9,20 @@
 @import "bootstrap/scss/utilities/api";
 @import "bootstrap/scss/bootstrap";
 
+.hero {
+    p {
+        @extend .lead;
+    }
+}
+
+.services {
+    .service {
+        p {
+            @extend .text-secondary;
+        }
+    }
+}
+
 .section {
     padding-top: 36px;
     padding-bottom: 36px;
@@ -41,5 +55,23 @@
     }
     img {
         z-index: 999 !important;
+    }
+}
+
+.pricing {
+    .pricing-item {
+        p {
+            @extend .text-secondary;
+            @extend .py-2;
+        }
+    }
+}
+
+.cta {
+    p {
+        @extend .mx-auto;
+        @extend .text-white;
+        @extend .col-lg-8;
+        @extend .fs-5;
     }
 }
