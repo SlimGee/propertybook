@@ -4,7 +4,7 @@ blueprint: home
 title: "Doing things that don't scale at scale"
 template: home
 updated_by: 1
-updated_at: 1719279460
+updated_at: 1719279940
 paragraph: "Master the art of doing things that don't scale to get your business off the ground without burnout"
 subtitle: "Master the art of doing things that don't scale to get your business off the ground without burnout"
 about:
@@ -87,7 +87,35 @@ service_items:
     type: new_set
     enabled: true
   -
+    id: lxtqvu4w
+    icon: bi-capsule
+    title: 'Refreshing Design'
+    content: "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words."
+    type: new_set
+    enabled: true
+  -
+    id: lxtqvrpu
+    icon: bi-capsule
+    title: 'Refreshing Design'
+    content: "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words."
+    type: new_set
+    enabled: true
+  -
     id: lxtoovyr
+    icon: bi-bootstrap
+    title: 'Bootstrap 5'
+    content: "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words."
+    type: new_set
+    enabled: true
+  -
+    id: lxtqv715
+    icon: bi-bootstrap
+    title: 'Bootstrap 5'
+    content: "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words."
+    type: new_set
+    enabled: true
+  -
+    id: lxtqvai1
     icon: bi-bootstrap
     title: 'Bootstrap 5'
     content: "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words."
