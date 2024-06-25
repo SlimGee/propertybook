@@ -3,6 +3,8 @@
 ## How to run the project
 A demo of this project is available online at [https://property.flixtechs.co.zw](https://property.flixtechs.co.zw).
 
+Admin panel is available at [https://property.flixtechs.co.zw/cp](https://property.flixtechs.co.zw/cp). 
+
 Username and password for the demo are:
 `admin@admin.com` and `demoadmin`.
 
